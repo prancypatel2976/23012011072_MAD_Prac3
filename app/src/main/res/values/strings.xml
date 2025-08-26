@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">23012011072_MAD_Prac3</string>
+    <string name="full_name">User Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="city">City</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="account">Do you have an account?</string>
+    <string name="login">LOGIN</string>
+    <string name="web_url">Web Url: </string>
+    <string name="browser">Browser</string>
+    <string name="phone_no">Phone No.: </string>
+    <string name="call">Call</string>
+    <string name="Call_log">Call Log:</string>
+    <string name="email_id">Email Id</string>
+    <string name="call_log">Call Log</string>
+    <string name="Gallery">Gallery: </string>
+    <string name="gallery">Gallery</string>
+    <string name="Camera">Camera: </string>
+    <string name="camera">Camera</string>
+    <string name="Alarm">Alarm: </string>
+    <string name="alarm">Alarm</string>
+    <string name="Login">Login: </string>
+</resources>

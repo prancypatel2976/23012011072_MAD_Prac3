@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/guni_pink_logo" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_login"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginHorizontal="20dp"
+        app:cardElevation="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+
+            <TextView
+                android:id="@+id/text_view_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/reg_top_margin"
+                android:text="@string/full_name"
+                app:layout_constraintEnd_toStartOf="@+id/edit_text_name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edit_text_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBaseline_toBaselineOf="@id/text_view_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/text_view_name" />
+
+            <TextView
+                android:id="@+id/text_view_phoneNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/reg_top_margin"
+                android:text="@string/phone_number"
+                app:layout_constraintEnd_toStartOf="@id/edit_text_phone"
+                app:layout_constraintStart_toStartOf="@+id/text_view_name"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_name" />
+
+            <EditText
+                android:id="@+id/edit_text_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBaseline_toBaselineOf="@id/text_view_phoneNo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/text_view_phoneNo" />
+
+            <TextView
+                android:id="@+id/text_view_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/reg_top_margin"
+                android:text="@string/city"
+                app:layout_constraintEnd_toStartOf="@+id/edit_text_city"
+                app:layout_constraintStart_toStartOf="@+id/text_view_phoneNo"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_phoneNo" />
+
+            <EditText
+                android:id="@+id/edit_text_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBaseline_toBaselineOf="@id/text_view_city"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/text_view_city" />
+
+            <TextView
+                android:id="@+id/text_view_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/reg_top_margin"
+                android:text="@string/email"
+                app:layout_constraintEnd_toStartOf="@+id/edit_text_email"
+                app:layout_constraintStart_toStartOf="@+id/text_view_city"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_city" />
+
+            <EditText
+                android:id="@+id/edit_text_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBaseline_toBaselineOf="@id/text_view_email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/text_view_email"/>
+
+            <TextView
+                android:id="@+id/text_view_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/reg_top_margin"
+                android:text="@string/password"
+                app:layout_constraintEnd_toStartOf="@+id/edit_text_password"
+                app:layout_constraintStart_toStartOf="@+id/text_view_email"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_email" />
+
+            <EditText
+                android:id="@+id/edit_text_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBaseline_toBaselineOf="@id/text_view_password"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/text_view_password" />
+
+            <TextView
+                android:id="@+id/text_view_confirm_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/reg_top_margin"
+                android:text="@string/confirm_password"
+                app:layout_constraintEnd_toStartOf="@+id/edit_text_confirm_password"
+                app:layout_constraintStart_toStartOf="@+id/text_view_password"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_password" />
+
+            <EditText
+                android:id="@+id/edit_text_confirm_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBaseline_toBaselineOf="@id/text_view_confirm_password"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/text_view_confirm_password"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-20dp"
+        app:layout_constraintBottom_toBottomOf="@id/card_login"
+        app:layout_constraintEnd_toEndOf="@id/card_login"
+        app:layout_constraintStart_toStartOf="@id/card_login"
+        android:elevation="25dp"
+        >
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="600dp"
+        android:text="@string/account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/login_btn_bg"
+        android:text="@string/login"
+        android:textColor="@color/login_btn_text"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/text1"
+        app:layout_constraintBaseline_toBaselineOf="@id/text1"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
